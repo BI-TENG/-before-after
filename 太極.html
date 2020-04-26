@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .big {
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, white 50%, black 50%);
+            box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .big::before {
+            content: '';
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: white;
+            /* 轉乘 block */
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+
+        .big::after {
+            content: '';
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: black;
+            /* 轉乘 block */
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .small {
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+
+        .small::before {
+            content: '';
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: 20%;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .small::after {
+            content: '';
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            bottom: 20%;
+            left: 0;
+            right: 0;
+            /* transform: translate(-50%, 0); */
+            margin: auto;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big">
+        <div class="small"></div>
+    </div>
+</body>
+
+</html>
