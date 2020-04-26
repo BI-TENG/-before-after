@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+    }
+
+    /* 推助器 */
+    .syringe {
+      width: 600px;
+      height: 100px;
+      background-image: linear-gradient(180deg, rgb(243, 243, 242) 0%, rgb(230, 227, 227) 25%, rgb(197, 197, 197) 50%, rgb(230, 227, 227) 75%, rgb(243, 243, 242) 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    /* 針頭 */
+    .syringe::after {
+      content: '';
+      width: 100px;
+      height: 5px;
+      background: black;
+      border-radius: 0 50% 50% 0;
+      position: absolute;
+      top: 45%;
+      left: 100%;
+    }
+
+    /* 針筒按頭 */
+    .syringe::before {
+      content: '';
+      width: 50px;
+      height: 130px;
+      background-image: linear-gradient(180deg, rgb(243, 243, 242) 0%, rgb(230, 227, 227) 25%, rgb(197, 197, 197) 50%, rgb(230, 227, 227) 75%, rgb(243, 243, 242) 100%);
+      border-radius: 5%;
+      position: absolute;
+      right: 100%;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+
+    /* 裝藥容器 */
+    .syringe2 {
+      width: 500px;
+      height: 150px;
+      background: linear-gradient(90deg, rgb(243, 243, 242) 40%, black 40%, black 60%, yellow 60%);
+      border-radius: 2%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    /* 刻度 */
+    td {
+      width: 1px;
+      height: 10px;
+    }
+
+    td:nth-child(even) {
+      background: black;
+    }
+
+    /* 字體 */
+    .syringe2::before {
+      content: "Made in Taiwan";
+      position: absolute;
+      width: 110px;
+      height: 20px;
+      bottom: 0;
+      margin-left: 1%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="syringe"></div>
+  <div class="syringe2">
+    <table border="0" cellspacing="5">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
